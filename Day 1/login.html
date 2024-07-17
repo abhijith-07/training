@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <h1>Login Page</h1>
+    </header>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td class="username">
+                    <label for="username">Username:</label>
+                </td>
+                <td class="username">
+                    <input type="text" name="username" id="username" placeholder="eg: alice" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="password">
+                    <label for="password">Password:</label>
+                </td>
+                <td class="password">
+                    <input type="password" name="password" id="password" placeholder="eg: password" required>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <input type="submit" name="login" id="login" value="Login">
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    New Here? <a href="register.html">Register</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -150,9 +150,12 @@ footer {
     }
 
     .dropdown-content li {
-        padding: 1em 0;
         background-color: #1e8fff23;
         border-bottom: 1px solid rgba(240, 248, 255, 0.511);
+    }
+
+    .dropdown-content li a {
+        display: block;
     }
 
     .dropdown-content li:hover {

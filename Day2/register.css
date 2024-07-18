@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+ul a {
+    text-decoration: none;
+    padding: 1em;
+    color: dodgerblue;
+}
+
+fieldset{
+    background-color: aliceblue;
+}
+
+td {
+    padding: 10px;
+}
+
+.form-field {
+    width: 15rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+#register {
+    background-color: dodgerblue;
+    font-size: 1rem;
+    color: aliceblue;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}

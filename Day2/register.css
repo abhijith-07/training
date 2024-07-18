@@ -1,5 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("assets/img/computer.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+/* Navbar */
+nav {
+    background-color: #2a2a2a65;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 
 ul {
@@ -11,28 +39,96 @@ ul {
 ul a {
     text-decoration: none;
     padding: 1em;
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+
+ul a:hover {
     color: dodgerblue;
 }
 
-fieldset{
-    background-color: aliceblue;
+/* Register Form */
+.register-form {
+    color: #fff;
+    width: 50%;
+    margin: 2rem auto 0;
+    padding: 1rem 2rem;
+    background-color: #72727265;
 }
 
-td {
-    padding: 10px;
+.register-form h1 {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.register-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 3em;
+    margin-top: 1em;
 }
 
 .form-field {
-    width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input {
+    background-color: #72727265;
     height: 1.5rem;
-    text-align: center;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.gender-fields {
+    display: flex;
+    gap: 1em;
+}
+
+.gender {
+    display: flex;
+}
+
+.gender input {
+    height: 1rem;
+}
+
+.form-field .technical-skills {
+    display: flex;
+    align-items: center;
+    gap: 0 1em;
+}
+
+[class*="skill-"] {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.form-field.register {
+    grid-column: 1 / span 2;
 }
 
 #register {
-    background-color: dodgerblue;
     font-size: 1rem;
+    background-color: dodgerblue;
     color: aliceblue;
     border: none;
     padding: 0.5rem 2rem;
     border-radius: 5px;
+}
+
+.login-link {
+    text-align: center;
+    padding: 1em;
+}
+
+.login-link a {
+    color: #0080ff;
+    background-color: #01112056;
 }
